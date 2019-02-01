@@ -13,7 +13,7 @@ const parseFileName = (fullName) => {
   const lastDot = fullName.lastIndexOf('.')
   const len = fullName.length
   const name = fullName.slice(0, lastDot)
-  const extension = fullName.slice(lastDot, len)
+  const extension = fullName.slice(lastDot + 1, len)
   return { name, extension}
 }
 
